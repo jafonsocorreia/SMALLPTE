@@ -20,20 +20,4 @@ codeunit 50100 "Label Print Management"
         ItemLabelReport.SetSalesLine(SalesLine);
         ItemLabelReport.RunModal();
     end;
-
-    procedure GetLabelTypeDescription(LabelType: Option " ","Standard","Barcode","QR Code","Custom"): Text
-    begin
-        case LabelType of
-            LabelType::" ":
-                exit('No Label');
-            LabelType::Standard:
-                exit('Standard Label');
-            LabelType::Barcode:
-                exit('Barcode Label');
-            LabelType::"QR Code":
-                exit('QR Code Label');
-            LabelType::Custom:
-                exit('Custom Label');
-        end;
-    end;
 }

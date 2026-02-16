@@ -69,11 +69,14 @@ report 50100 "Item Label Report"
         SalesLineQuantity: Decimal;
         Quantity: Integer;
 
+    trigger OnInitReport()
+    begin
+        Quantity := 1;
+    end;
+
     procedure SetSalesLine(SalesLine: Record "Sales Line")
     begin
         SalesOrderNo := SalesLine."Document No.";
         SalesLineQuantity := SalesLine.Quantity;
-        if Quantity = 0 then
-            Quantity := 1;
     end;
 }
