@@ -63,6 +63,7 @@ A Per Tenant Extension (PTE) for Microsoft Dynamics 365 Business Central that en
 ## Files Included
 
 - `app.json` - Extension configuration
+- `LabelTypeEnum.al` - Enum for label types
 - `ItemTableExt.al` - Table extension for Item
 - `ItemCardPageExt.al` - Page extension for Item Card
 - `SalesOrderSubformPageExt.al` - Page extension for Sales Order Subform

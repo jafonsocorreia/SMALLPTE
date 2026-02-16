@@ -2,7 +2,7 @@ enum 50100 "Label Type"
 {
     Extensible = true;
 
-    value(0; " ")
+    value(0; "None")
     {
         Caption = ' ';
     }
