@@ -2,11 +2,9 @@ tableextension 50100 "Item Label Type Ext" extends Item
 {
     fields
     {
-        field(50100; "Label Type"; Option)
+        field(50100; "Label Type"; Enum "Label Type")
         {
             Caption = 'Label Type';
-            OptionMembers = " ","Standard","Barcode","QR Code","Custom";
-            OptionCaption = ' ,Standard,Barcode,QR Code,Custom';
             DataClassification = CustomerContent;
         }
     }
